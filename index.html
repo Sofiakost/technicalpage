@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pizza">
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Technical Documentation Page</title>
+     
+        
+    </head>
+    <body>
+        <header id="top">
+            <h1> CSS Tutorial</h1>
+</header>
+        <nav id="navbar">
+            <header> CSS Tutorial
+            </header>
+             <div class="nav nav-tabs" id="topnav">
+             <a class="nav-link "  data-toggle="tab" href="#"></a>          
+      <a class="nav-link active"  data-toggle="tab" href="#Introduction">Introduction</a>
+      <a class="nav-link"  data-toggle="tab" href="#CSS_Syntax">CSS Syntax</a>  
+          <a class="nav-link"  data-toggle="tab" href="#Colors">Colors</a>
+               <a  class="nav-link" data-toggle="tab" href="#Margin_and_Paddings">Margin and Paddings</a>
+               <a class="nav-link" data-toggle="tab"  href="#Width_and_Height">Width and Height</a>
+               <a class="nav-link"  data-toggle="tab" href="#Text">Text</a>
+               <a class="nav-link" data-toggle="tab" href="#Links">Links</a>
+               <a class="nav-link" data-toggle="tab" href="#Lists">Lists</a>
+               <a class="nav-link" data-toggle="tab" href="#Tables">Tables</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+               </div>     
+        </nav>
+        <main id="main-doc" class="tab-content">
+            <section class="main-section tab-pane active" id="Introduction">
+                <header><h2>Introduction </h2></header>
+               <p> CSS is a language that describes the style of an HTML document. </p>
+               <p> CSS describes how HTML elements should be displayed. </p> 
+              <p> This tutorial will teach you CSS from basic to advanced.</p>
+              <br/>
+              <h2>  What is CSS? </h2>
+              <p>CSS stands for Cascading Style Sheets </p>
+<p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+  CSS saves a lot of work. It can control the layout of multiple web pages all at once </p>
+              <p>External stylesheets are stored in CSS files </p>
+          <br/>
+       <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+
+                
+            </section>
+            
+               <section class="main-section tab-pane" id="CSS_Syntax">
+                               <header><h2> CSS Syntax</h2></header>
+                   <p> A CSS rule-set consists of a selector and a declaration block:</p>
+                  <p> The selector points to the HTML element you want to style. </p> 
+                   <p> The declaration block contains one or more declarations separated by semicolons.</p>
+                   <p> Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                     <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces. </p>
+                   <p> In the following example all <p> elements will be center-aligned, with a red text color:</p>
+                   <code>  
+                     p {<br/>
+                            color: red; <br/>
+                            text-align: 
+center;<br/>
+                        }
+                   </code>
+                 <br/>
+                  <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+        
+                        
+               <section class="main-section tab-pane" id="Colors">
+                   <header> <h2> Colors</h2> </header>
+                   
+                   <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+                   <p>The background color of a page is set like this:</p>
+                   <code>
+                                                body {
+                            background-color: lightblue;
+                        }
+                   </code>
+                 <br/>
+                 <h2> RGB Value</h2>
+<article>
+In HTML, a color can be specified as an RGB value, using this formula:
+  <br/>
+<strong> rgb(red, green, blue)</strong>
+<br/>
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+<br>
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+<br>
+To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).
+<br>
+To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</article>
+                 <br>
+                  <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+                        
+               <section class="main-section tab-pane" id="Margin_and_Paddings">
+              <header> <h2>Margins and Paddings</h2></header>
+                   <p> The CSS margin properties are used to create space around elements, outside of any defined borders.</p> 
+<p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+                   <p>The following example sets different margins for all four sides of a p element:</p>
+                   <code>
+                       p { <br>
+                            margin-top: 100px; <br>
+                            margin-bottom: 100px;<br>
+                            margin-right: 150px;<br>
+                            margin-left: 80px;<br>
+                        }
+
+                   </code>
+                   
+                   <p>  If the margin property has four values: </p>
+                   <ul>
+                   margin: 25px 50px 75px 100px; 
+                    <li>top margin is 25px  </li>
+                    <li> right margin is 50px  </li>
+                    <li>  bottom margin is 75px</li>
+                    <li> left margin is 100px</li>
+                   </ul>
+                   
+                   <code>
+                                       p {
+                          margin: 25px 50px 75px 100px;
+                    }
+                    
+                   </code>
+                  <ul> CSS has properties for specifying the padding for each side of an element:
+                     <li> padding-top  </li>   
+                      <li> padding-right </li>
+                      <li> padding-bottom </li>
+                      <li> padding-left  </li>
+                   </ul>
+
+
+                   
+                   <p>   The following example sets different padding for all four sides of a div element: </p>
+                   
+                   <code>
+                     div { <br>
+                        padding-top: 50px; <br>
+                        padding-right: 30px; <br>
+                        padding-bottom: 50px; <br>
+                        padding-left: 80px; <br>
+                    }
+                   </code>
+<br>
+                       <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+                        
+               <section class="main-section tab-pane" id="Width_and_Height">
+              <header> <h2>Width and Height</h2> </header>
+                   <p>The height and width properties are used to set the height and width of an element.</p>
+                   <p> The height and width can be set to auto (this is default. Means that the browser calculates the height and width), or be specified in length values, like px, cm, etc., or in percent (%) of the containing block.</p>
+                   <code>  div {<br>
+                            height: 200px;<br>
+                            width: 50%;<br>
+                            background-color: powderblue;<br>
+                        }
+                   </code>
+                   <br>
+                       <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+                        
+               <section class="main-section tab-pane" id="Text">
+                   <header> <h2>Text</h2></header>
+                  <p> The color property is used to set the color of the text. The color is specified by:</p>
+<ul>
+  <li>a color name - like "red"</li>
+  <li> a HEX value - like "#ff0000"</li>
+  <li>an RGB value - like "rgb(255,0,0)"</li>
+                 </ul>
+                 <p>Look at CSS Color Values for a complete list of possible color values.</p>
+<p>
+  The default text color for a page is defined in the body selector.</p>
+                 <h2>  Text Alignment </h2>
+                 <p> The text-align property is used to set the horizontal alignment of a text.</p>
+<p>
+  A text can be left or right aligned, centered, or justified.</p>
+                  <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+                  <section class="main-section tab-pane" id="Links">
+                   <header> <h2>Links</h2></header>
+                    
+                 <p>   Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</p>
+                    <code>
+                      a { <br>
+    color: hotpink;<br>
+}
+                    </code>
+<br>
+<p>In addition, links can be styled differently depending on what state they are in.</p>
+<p>
+  The four links states are: </p>
+<ul>
+  <li> a:link - a normal, unvisited link</li>
+<li> a:visited - a link the user has visited</li>
+<li> a:hover - a link when the user mouses over it</li>
+<li> a:active - a link the moment it is clicked</li>
+</ul>
+<br>
+                  <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+                       <section class="main-section tab-pane" id="Lists">
+                   <header> <h2>Lists</h2></header>
+                         <p>        In HTML, there are two main types of lists:</p>
+<ul>
+  <li>unordered lists (&lt;ul&gt;) - the list items are marked with bullets</li>
+  <li>ordered lists (&lt;ol&gt;) - the list items are marked with numbers or letters</li>
+                         </ul>
+<p>The CSS list properties allow you to:
+                         </p>
+                         <ul>
+<li>Set different list item markers for ordered lists</li>
+<li>Set different list item markers for unordered lists</li>
+<li>Set an image as the list item marker</li>
+<li>Add background colors to lists and list items</li>
+                         </ul>
+                         <br>
+                  <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+                           <section class="main-section tab-pane" id="Tables">
+                   <header> <h2>Tables</h2></header>
+                             <p>  To specify table borders in CSS, use the border property.</p>
+<p>
+  The example below specifies a black border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements: </p>
+       <table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Stone</td>
+  </tr>
+  <tr>
+    <td>Nike</td>
+    <td>Colins</td>
+  </tr>
+</table>
+                             <br>
+                             <p>Width and height of a table are defined by the width and height properties.</p>
+                             <h2> Horizontal Alignment</h2>
+<p>The text-align property sets the horizontal alignment (like left, right, or center) of the content in &lt;th&gt;  or &lt;td&gt;. </p>
+<p>
+By default, the content of &lt;th&gt;,elements are center-aligned and the content of &lt;td&gt;  elements are left-aligned.</p>
+                             <br>
+                             
+                  <h3>Reference </h3>
+                <p> All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp"  target="_blank">W3SCHOOLS</a></p>
+            </section>
+        </main>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+       function myFunction() {
+    var x = document.getElementById("topnav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+        </script>
+    </body>
+</html>
